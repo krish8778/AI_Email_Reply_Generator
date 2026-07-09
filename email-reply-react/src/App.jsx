@@ -16,11 +16,15 @@ function App() {
   const handleSubmit = async() => {
       setLoading(true);
       try{
-        const response = await axios.post("http://localhost:8080/api/email/generate", {
-          emailContent,
-          tone
-        });
+        const response = await axios.post(
+          "https://ai-email-reply-generator-gvr1.onrender.com/api/email/generate",
+          {
+            emailContent,
+            tone,
+          },
+        );
         setGeneratedReply(response.data);
+        setError("");
       }catch(error){
         setError('Failed to generate Email reply. Please try again');
         console.log(error);
