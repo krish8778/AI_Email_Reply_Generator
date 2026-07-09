@@ -213,31 +213,6 @@ email-reply-generator
 
 ---
 
-## Screenshots
-
-Add screenshots of:
-
-* Home Page
-* Email Input
-* Tone Selection
-* Generated Reply
-* Copy to Clipboard
-
----
-
-## Future Enhancements
-
-* Email subject generation
-* Multiple AI model support
-* Markdown formatting
-* Authentication
-* Email history
-* Dark mode
-* Export reply as PDF
-* Multi-language support
-
----
-
 ## Author
 
 **Muthu Krishnan B**
