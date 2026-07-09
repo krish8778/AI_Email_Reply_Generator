@@ -12,17 +12,15 @@ function App() {
   const [generatedReply, setGeneratedReply] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const handleSubmit = async() => {
       setLoading(true);
       try{
-        const response = await axios.post(
-          "https://ai-email-reply-generator-gvr1.onrender.com/api/email/generate",
-          {
-            emailContent,
-            tone,
-          },
-        );
+        const response = await axios.post(`${API_URL}api/email/generate`, {
+          emailContent,
+          tone,
+        });
         setGeneratedReply(response.data);
         setError("");
       }catch(error){
