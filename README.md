@@ -2,6 +2,8 @@
 
 An AI-powered email reply generator that creates professional, friendly, or casual email responses using Google's Gemini AI. The application consists of a React frontend and a Spring Boot backend, providing a simple and responsive interface for generating email replies.
 
+Live Link: https://ai-email-reply-generator-flax.vercel.app/
+
 ---
 
 ## Features
