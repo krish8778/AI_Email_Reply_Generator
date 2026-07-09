@@ -9,7 +9,7 @@ import javax.lang.model.util.Elements;
 
 // /api/email/generate
 
-@CrossOrigin(origins = "http://localhost:5173")
+
 @RestController
 @RequestMapping("/api/email")
 public class EmailGeneratorController {
